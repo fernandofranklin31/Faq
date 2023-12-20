@@ -11,6 +11,30 @@
     
 }
 
+
+#header {
+    
+}
+
+#imgHeader {
+    
+   
+    
+    
+}
+.content {
+    background-color: antiquewhite;
+    border-radius: 10px;
+    max-width: 1440px;
+    position:absolute; 
+    z-index: 2;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%); 
+   
+      
+}
+
 h1 {
     font-size: 50px;
     margin-bottom: 30px;

@@ -38,20 +38,18 @@ img {
 }
 
 span {
-    display: flex;
+    display:flex;
     justify-content: space-between;
     align-items: center;
     color: var(--dark-purple);
     font-weight: 700;
+    border-bottom: 1px solid var(--light-pink);
 } 
 
 .article {
+    
+    align-items: center;
     border-bottom: 1px solid var(--light-pink);
-    
-    
-    
-   
-    
 }
 
 .content {

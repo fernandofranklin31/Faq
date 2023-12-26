@@ -13,6 +13,8 @@ var imgFourPlus = document.getElementById('imgFourPlus');
 var btns = document.querySelectorAll('button');
 var parags = document.querySelectorAll('p');
 var plusImgs = document.querySelectorAll('.imgPlusButtons');
+var question = document.querySelectorAll('.question');
+
 
 
 btns.forEach((btn, index) => {
@@ -30,3 +32,14 @@ btns.forEach((btn, index) => {
     });
 });
 
+
+
+function clickPlusButton() {
+    var hidden = parags.classList.contains('hidden');
+
+    if (hidden) {
+        firstParag.classList.remove('hidden');
+        plusImgs.setAttribute('src', '/assets/images/icon-minus.svg');
+    
+}
+}

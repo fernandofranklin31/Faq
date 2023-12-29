@@ -13,33 +13,22 @@ var imgFourPlus = document.getElementById('imgFourPlus');
 var btns = document.querySelectorAll('button');
 var parags = document.querySelectorAll('p');
 var plusImgs = document.querySelectorAll('.imgPlusButtons');
-var question = document.querySelectorAll('.question');
+var question = document.querySelectorAll('#question');
 
 
 
-btns.forEach((btn, index) => {
-    btn.addEventListener('click', () => {
-        var isHidden = parags[index].classList.contains('hidden');
+question.forEach((btn, index) => { btn.addEventListener('click', () => {toggleVisibility(index) })});
 
-        if (isHidden) {
-            parags[index].classList.remove('hidden');
-            plusImgs[index].setAttribute('src', '/assets/images/icon-minus.svg');
-        }
-        else {
-            parags[index].classList.add('hidden');
-            plusImgs[index].setAttribute('src', '/assets/images/icon-plus.svg');
-        }
-    });
-});
+function toggleVisibility(index) {
+    var isHidden = parags[index].classList.contains('hidden');
+    if (isHidden) {
+        parags[index].classList.remove('hidden');
+        plusImgs[index].setAttribute('src', '/assets/images/icon-minus.svg');
+    }
+    else {
+        parags[index].classList.add('hidden');
+        plusImgs[index].setAttribute('src', '/assets/images/icon-plus.svg');
+    }
 
-
-
-function clickPlusButton() {
-    var hidden = parags.classList.contains('hidden');
-
-    if (hidden) {
-        firstParag.classList.remove('hidden');
-        plusImgs.setAttribute('src', '/assets/images/icon-minus.svg');
-    
 }
-}
+
